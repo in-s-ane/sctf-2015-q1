@@ -31,6 +31,8 @@ public class Solution {
             String[] result = s.split("\\s+");
             tmp = Double.parseDouble(result[4]) * Double.parseDouble(result[6]) / Double.parseDouble(result[2]);
             if (result[2].length() < 5 && tmp > highest) {
+                secondHighest = highest;
+                secondHighestName = highestName;
                 highest = tmp;
                 highestName = result[0];
             } else if (result[2].length() < 5 && tmp > secondHighest && tmp < highest) {
