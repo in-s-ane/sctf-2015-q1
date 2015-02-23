@@ -1,0 +1,11 @@
+aGFtcHduZXIz is hampwner3 in base64
+
+On http://hampwner.kinja.com, there is a post:
+"if you're from sctf.io then you'll be interested in this: https://www.youtube.com/watch?v=jlcTNS...    »   2/14/15 10:33pm"
+
+Which leads to the video: https://www.youtube.com/watch?v=jlcTNS2TUhg
+
+There is a comment on the video:
+"Wow cool video! フラグはハムです。"
+
+When translated, it gives "Flag is ham"
