@@ -1,0 +1,3 @@
+Literally just the name of the program given to you: qwerty.exe
+
+Flag: qwerty
