@@ -28,7 +28,7 @@ def algo2(num):
 
 #print algo2(5280) # Should return 3
 count = 0
-for i in range(100, 1000000):
+for i in range(101, 100000000):
     if algo2(i) > 10:
         count += 1
 print count
