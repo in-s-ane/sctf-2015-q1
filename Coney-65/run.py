@@ -1,4 +1,4 @@
-hidden = "xU2FsdGVkX1/seMYknjQGW971EboRgFcx+jfczzdSrWMjt1xwRrPnQBbEsz+Mt7dA4xxsOVB88e8VGl70PK"
+hidden = "U2FsdGVkX1/seMYknjQGW971EboRgFcx+jfczzdSrWMjt1xwRrPnQBbEsz+Mt7dA4xxsOVB88e8VGl70"
 output = ""
 for char in hidden:
     if char == '/' or char == '+':
@@ -6,7 +6,7 @@ for char in hidden:
     else:
         output += str(ord(char))
 print output
-n = eval(output) #1061029912289326634121429830731764918786386758167948780724603197
+n = eval(output)
 n = str(n)
 print n
 
