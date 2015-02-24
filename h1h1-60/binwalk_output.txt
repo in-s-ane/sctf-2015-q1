@@ -1,0 +1,13 @@
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+33264         0x81F0          Zlib compressed data, compressed
+33789         0x83FD          Zlib compressed data, best compression
+68264         0x10AA8         Zlib compressed data, best compression
+81025         0x13C81         Zlib compressed data, default compression
+93474         0x16D22         Zlib compressed data, compressed
+118752        0x1CFE0         PNG image, 298 x 55, 8-bit/color RGB, non-interlaced
+118843        0x1D03B         Zlib compressed data, compressed
+
+THERE'S A PNG FILE IN THERE!!!! LET'S EXTRACT IT
+dd if=yey.mp3 of=yey.png bs=1 skip=118752
