@@ -1,15 +1,18 @@
 '''
-Starting at 1
-bashing out the first: 131027
-bashing out the second: 16814935
+Part 1: Apply the 196-Algorithm to all numbers greater than 100 and less than one million and take the count of all the end results that take greater than 10 iterations and less than 100. The answer to Part 1 is the count.
+Part 2: Redo Part 1 with all numbers greater than 100 and less than one-hundred million. The answer to Part 2 is the redone count.
 
-Starting at 0
-bashing out the first: 112856
-bashing out the second: 14649808
+Starting at original number
+Part 1 solution: 131027
+Part 2 solution: 16814935
+
+Ignoring original number
+Part 1 solution: 113068
+Part 2 solution: 14652767
 '''
 
 def algo(num):
-    iters = 0
+    iters = 1
     while iters < 100:
         palinstr = str(num)
         revPalinstr = palinstr[::-1]
@@ -19,7 +22,12 @@ def algo(num):
         iters += 1
 
 count = 0
-for i in range(101, 1000000):
-    if algo(i) > 10:
+i = 101
+while i < 100000000:
+    if algo(i + int(str(i)[::-1])) > 10:
         count += 1
+    i += 1
 print count
+f = open('solution.txt', 'w')
+f.write(str(count))
+f.close()
