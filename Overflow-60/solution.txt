@@ -1,0 +1,16 @@
+The important line is
+
+`fgets(name,34,stdin);`
+
+Before that, we can see that name is a buffer of 32 chars.
+
+`char name[32];`
+
+Which means overflowing time!!!
+
+Dump a string of 32 random characters and then the 33rd will need to be a char where the ascii representation has a value of > 126
+In this case, the tilda (~) has a value of 126.
+
+Inputting 12345678901234567890123456789012~ as my name, I get authorization level to view the flag
+
+Flag: ~4da_win
