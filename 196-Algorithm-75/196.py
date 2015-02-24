@@ -5,7 +5,7 @@ bashing out the second: 16814935
 
 Starting at 0
 bashing out the first: 112856
-bashing out the second: ???
+bashing out the second: 14649808
 '''
 
 def algo(num):
