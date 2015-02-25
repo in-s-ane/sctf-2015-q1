@@ -1,4 +1,10 @@
+import base64
+
 hidden = "U2FsdGVkX1/seMYknjQGW971EboRgFcx+jfczzdSrWMjt1xwRrPnQBbEsz+Mt7dA4xxsOVB88e8VGl70"
+
+print base64.b64decode(hidden)
+
+'''
 output = ""
 for char in hidden:
     if char == '/' or char == '+':
@@ -19,3 +25,4 @@ for char in n:
         temp = ""
 
 print answer
+'''
