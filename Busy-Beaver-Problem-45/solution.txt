@@ -1,0 +1,3 @@
+http://en.wikipedia.org/wiki/Busy_beaver#Non-computability_of_.CE.A3
+
+flag: A028444
