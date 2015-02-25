@@ -1,9 +1,13 @@
 import urllib, urllib2, cookielib
 
 
+f = open('credentials.txt', 'r')
+username = f.readline().strip()
+password = f.readline().strip()
+
 cred = {
-    'username': '##############',
-    'password': '##############',
+    'username': username,
+    'password': password,
     'login': 'Login',
 }
 auth_url = 'http://compete.sctf.io/login.php'
