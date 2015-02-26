@@ -1,0 +1,11 @@
+1. unzip coney.gif to reveal the file x with contents:
+
+U2FsdGVkX1/seMYknjQGW971EboRgFcx+jfczzdSrWMjt1xwRrPnQBbEsz+Mt7dA4xxsOVB88e8VGl70
+
+2. Since coney.gif is a picture of a rabbit, we googled rabbit cipher, leading to:
+
+http://uttool.com/encryption/rabbit/default.aspx
+
+3. Using the tool with key `rabbit`, we get
+
+The key is who_knew_there_is_a_rabbit_cipher
