@@ -1,4 +1,4 @@
-Input password:import codecs
+import codecs
 import socket
 import sys
 from threading import *
