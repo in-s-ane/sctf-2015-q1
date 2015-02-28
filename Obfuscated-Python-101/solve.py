@@ -1,6 +1,6 @@
 import codecs
 
-flag_file = "flag.txt"
+flag_file = "server.py"
 plaintext = ""
 
 x = 0
