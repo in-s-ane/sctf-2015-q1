@@ -1,0 +1,20 @@
+A quick look shows that the gif is 327 x 152 in size.
+A google image search for images dubbed "Gandalf nod gif" and the specific size of 327 x 152 px gives us only one result, with the url being:
+http://media.tumblr.com/059bc4cfdca89deaf98cf821e62593a7/tumblr_inline_mos6cjyiM71qecfy1.gif
+
+That image is downloaded in this folder as the_nod2.gif
+
+Now we hex dump both images by:
+xxd the_nod.gif > theNod.hex
+xxd the_nod2.gif > theNod2.hex
+
+Then we simply do a diff on these two, and we get:
+59628,59629c59628,59629
+< 00e8eb0: 2d31 666c 6167 6973 6761 6e64 616c 6674  -1flagisgandalft
+< 00e8ec0: 6865 6265 7374 0112 d6a0 0650 0005 5a00  hebest.....P..Z.
+---
+> 00e8eb0: 2d31 0e2e 1310 3c01 6966 c1e4 5e65 1c0f  -1....<.if..^e..
+> 00e8ec0: e218 7c41 1632 0112 d6a0 0650 0005 5a00  ..|A.2.....P..Z.
+
+the flag:
+gandalfthebest
