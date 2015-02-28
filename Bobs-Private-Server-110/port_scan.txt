@@ -1,0 +1,27 @@
+>> nmap -v -sT -Pn 192.99.244.134
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2015-02-28 14:59 EST
+Initiating Parallel DNS resolution of 1 host. at 14:59
+Completed Parallel DNS resolution of 1 host. at 14:59, 0.04s elapsed
+Initiating Connect Scan at 14:59
+Scanning 134.ip-192-99-244.net (192.99.244.134) [1000 ports]
+Discovered open port 554/tcp on 192.99.244.134
+Discovered open port 22/tcp on 192.99.244.134
+Connect Scan Timing: About 1.97% done; ETC: 15:25 (0:25:45 remaining)
+Discovered open port 3389/tcp on 192.99.244.134
+Connect Scan Timing: About 8.20% done; ETC: 15:12 (0:11:34 remaining)
+Discovered open port 9898/tcp on 192.99.244.134
+Discovered open port 7070/tcp on 192.99.244.134
+Completed Connect Scan at 15:01, 91.29s elapsed (1000 total ports)
+Nmap scan report for 134.ip-192-99-244.net (192.99.244.134)
+Host is up (0.035s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+554/tcp  open  rtsp
+3389/tcp open  ms-wbt-server
+7070/tcp open  realserver
+9898/tcp open  monkeycom
+
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 91.39 seconds
