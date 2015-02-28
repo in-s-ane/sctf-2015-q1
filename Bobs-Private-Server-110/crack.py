@@ -1,3 +1,4 @@
+import sys
 from hashlib import sha1
 
 rainbow = ["red", "green", "yellow", "blue", "orange", "indigo", "violet"]
@@ -14,12 +15,14 @@ f.close()
 
 f = open('cat_names.txt', 'r')
 
-for name in f:
-    name = name.strip().lower()
+for cat_name in f:
+    cat_name = cat_name.strip().lower()
     for e in number_color:
-        password = name + e
-        #print password
+        password = cat_name + e
         if sha1(password).hexdigest() == hashed:
-            print "%s's password: %s" % (name, password)
-            break
-    print name
+            f = open('password.txt', 'w')
+            f.write(password)
+            f.close()
+            print "Bob's password: %s" % (password)
+            sys.exit(0)
+    print cat_name
