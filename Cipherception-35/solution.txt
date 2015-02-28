@@ -1,0 +1,16 @@
+Pretty simple with the help of the following website:
+http://rumkin.com/tools/cipher/
+
+They give you the algorithm AND the key if there even is one... Very simple...
+
+Original text: OCBnbCB0bCAxMCBmZGFuIHlkIGxkIFlndiBydnogYmQgcG1qcHpkX2Z4Y3liY3R2X2FibGxiY2w=
+
+After Base64 decryption: 8 gl tl 10 fdan yd ld Ygv rvz bd pmjpzd_fxcybctv_abllbcl
+
+After Atbash decryption: 8 to go 10 uwzm bw ow Bte iea yw knqkaw_ucxbyxge_zyooyxo
+
+After rot-8 decryption: 8 lg yg 10 more to go Tlw aws qo cficso_muptqpyw_rqggqpg
+
+After 5-Affine-2 decryption: 8 hg ug 10 csdq ts gs The key is always_continue_digging
+
+Key: always_continue_digging
