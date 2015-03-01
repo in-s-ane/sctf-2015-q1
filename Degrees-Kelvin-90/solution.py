@@ -1,8 +1,14 @@
 """This is so not gonna work, simple greedy algorithm"""
 
+import sys
+
 score = 0 # score counter
 
-f = open("keelvin.txt", "r").read().split("\n")
+f = open(sys.argv[1], "r").read().split("\n")
+
+f = filter(None, f)
+
+print f
 
 problemList = []
 worthList = []
