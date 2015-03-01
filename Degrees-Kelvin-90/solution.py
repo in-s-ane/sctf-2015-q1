@@ -30,21 +30,28 @@ def maxIndex(list1): # linear search that returns index
 
 def isZero(input_list):
     for i in input_list:
-        if i != 0:
+        if i[0] != 0:
             return False
     return True
 
 def solve(problems):
     if not isZero(problems):
+        max_score = 0
         for i in range(0, len(problems)):
+            if problems[i][0] == 0:
+                continue
             problems_copy = copy.deepcopy(problems)
             problem = problems_copy.pop(i)
             for j in range(0, len(problems_copy)):
                 problems_copy[j][0] -= (problem[2] * problems_copy[j][1])
                 if problems_copy[j][0] < 0:
                     problems_copy[j][0] = 0
-            return problem[0] + solve(problems_copy)
-    return 0
+            total = problem[0] + solve(problems_copy)
+            if total > max_score:
+                max_score = total
+        return max_score
+    else:
+        return 0
 
 for i in range(0, len(problemList)):
     problems_copy = copy.deepcopy(problemList)
