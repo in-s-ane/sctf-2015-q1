@@ -1,0 +1,7 @@
+"My favorite local restaurant is Osaka, but what if I want actual native food? Where should I go?"
+
+http://en.wikipedia.org/wiki/Osaka
+
+The flag is the japanese latin pronounication of osaka.
+
+flag: tenkanodaidokoro
