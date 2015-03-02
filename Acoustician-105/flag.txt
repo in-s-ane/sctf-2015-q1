@@ -1,0 +1,3 @@
+Open acoustics.wav in Audacity and look at the pitch graph
+
+sound_is_good
