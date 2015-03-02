@@ -4,6 +4,6 @@ gcc break_enigma.c enigma.c NBestList.c scoreText.c -lm -O3
 The above SHOULD work.
 
 However, it doesn't and so we'll guess the flag.
-The beginning looks like "THE KEY IS". Afterwards, we get a six character word which can be ENIGMA or TURING. Then a two character word which is most likely TO. The last one must be an adjective of 11 characters.
+The beginning looks like "THE KEY IS". Afterwards, we get a six character word which can be ENIGMA or TURING. Then a two character word which is most likely IS. The last one must be an adjective of 11 characters.
 
 So, the flag ends up being: ENIGMA_IS_FASCINATING
