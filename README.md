@@ -1,7 +1,7 @@
 sCTF - in/s/ane
 ===============
 
-Solutions to problems written by team in/s/ane during the [2015 February sCTF](http://compete.sctf.io) challenge
+Solutions to problems, written by team in/s/ane during the [2015 February sCTF](http://compete.sctf.io) challenge
 
 Team Members:
 - Ishraq Bhuiyan
