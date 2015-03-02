@@ -14,7 +14,11 @@ print received
 received = sock.recv(1024)
 print received
 
-choices = ["k", "j", "j", "k", "w"]
+sock.sendall("godmode")
+received = sock.recv(1024)
+print received
+
+choices = ["k"]
 
 for action in itertools.cycle(choices):
     #action = raw_input("> ")
@@ -28,3 +32,5 @@ for action in itertools.cycle(choices):
             print received
 
 sock.close()
+
+# In the end, we get the flag: godmode_is_best
