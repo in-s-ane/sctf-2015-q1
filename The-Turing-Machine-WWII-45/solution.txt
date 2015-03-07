@@ -1,9 +1,12 @@
+We are given the following: NIF LDA AR OAOWCQ_HZ_WWZEBIQQGIL
+
 gcc break_enigma.c enigma.c NBestList.c scoreText.c -lm -O3
 ./a.out
+We get: THEKEYISENIUMAISFASCINATING
+Obviously they spelled it wrong, they meant to say ENIGMA_IS_FASCINATING
 
-The above SHOULD work.
 
-However, it doesn't and so we'll guess the flag.
+We can also guess the flag:
 The beginning looks like "THE KEY IS". Afterwards, we get a six character word which can be ENIGMA or TURING. Then a two character word which is most likely IS. The last one must be an adjective of 11 characters.
 
 So, the flag ends up being: ENIGMA_IS_FASCINATING

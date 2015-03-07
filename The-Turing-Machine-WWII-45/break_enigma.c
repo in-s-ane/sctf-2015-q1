@@ -21,7 +21,7 @@ This version assumes no plugboard is used.
 int main(int argc, char *argv[]){
     // cipher text variable must be all capitals, with no spacing or punctuation, use e.g. http://practicalcryptography.com/ciphers/mechanical-era/enigma/
     // to generate messages. This version can not break enigma messages with plugs.
-    char ctext[] = "NIF LDA AR OAOWCQ_HZ_WWZEBIQQGIL";
+    char ctext[] = "NIFLDAAROAOWCQHZWWZEBIQQGIL";
     char *ptext = malloc(sizeof(char)*(strlen(ctext)+1));
     EnigmaKey *ref;
     ref = break_enigma(ctext);
